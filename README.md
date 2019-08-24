@@ -2,12 +2,23 @@
 This repository contains information regarding my [Google Summer of Code](https://summerofcode.withgoogle.com) project: **[Build CHAOSS Risk and Growth Maturity and Decline Metrics in Augur](https://summerofcode.withgoogle.com/projects/#5226166565208064)**.
 
 - [Project Abstract](#project-abstract)
+- [Coding Phase Summary](#coding-phase-summaries)
 - [Pull Requests](#pull-requests)
 - [Weekly Summary](#weekly-blogposts)
 - [Links](#links)
 
 ## Project Abstract
 Augur is fully functional prototyping web stack for CHAOSS metrics. It provides structured data mined from git repositories using a plugin architecture that incorporates other open source metrics projects like Facade and FOSSology. The main aim of this project is to extend Augur’s functionality by implementing Risk and Growth-Maturity-Decline CHAOSS metrics and use cases with a focus on the open source community manager use case. This project, with a focus on the community manager use case, will allow open source community managers to leverage Risk and Growth-Maturity-Decline metrics to better manage their communities and projects.
+
+## Coding Phase Summaries
+#### Coding Phase 1 (27th May to 28th June)
+This phase began with understanding Augur's new architecture and the Unified Database schema, after which we came up with an approach to begin implementing evolution (growth-maturity-decline) metrics. I implemented various evolution metrics & and a few risk metrics in this phase. Apart from implementing metrics, I also helped improve the new developer experience by documenting the steps to implementing metrics in Augur.
+
+#### Coding Phase 2 (28th June to 26th July)
+A lot happened in this phase. This phase began with Augur's new UI being merged into the `dev` branch. I continued implementing metrics, updating documentation and writing tests. I also built two new workers, one for fetching GitHub repository metadata & the other for fetching GitHub pull request data. These workers increased Augur's data collection allowing various new metrics to be implemented.
+
+#### Coding Phase 3 (26th July to 26th August)
+In this phase, I continued working on the workers and implemented pull request related metrics. The pull requests worker and the repository metadata worker were updated to fetch more data. I also wrote a python script that generates the config file improving the new developer experience. 
 
 ## Pull Requests
 #### Coding Phase 1 (27th May to 28th June)
